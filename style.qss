@@ -1,0 +1,173 @@
+/* ==========================
+   Stile globale finestra e scroll area
+   ========================== */
+QWidget {
+    background-color: #121212;
+    color: #ffffff;
+    font-size: 10pt;
+}
+
+QScrollArea, QScrollArea QWidget {
+    background-color: #121212;
+}
+
+#labelTitolo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   Sezioni Collassabili
+   ========================== */
+QPushButton#collapsible_header {
+    text-align: left;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #444444;
+    background-color: #3a3a3a;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+QPushButton#collapsible_header:hover {
+    background-color: #4a4a4a;
+}
+
+QPushButton#collapsible_header:checked {
+    background-color: #2a2a2a;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+QPushButton#creditsButton {
+    background-color: #5bc0de; /* Ciano informativo */
+    color: white;
+}
+QPushButton#creditsButton:hover {
+    background-color: #31b0d5;
+}
+
+QPushButton#closeButton {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+    font-weight: normal;
+}
+QPushButton#closeButton:hover {
+    background-color: #444444;
+    border-color: #777777;
+}
+
+CollapsibleBox > QWidget > QWidget {
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+}
+
+/* ==========================
+   LineEdit, RadioButton
+   ========================== */
+QLineEdit, QComboBox {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 4px 6px;
+}
+
+QLineEdit:hover, QComboBox:hover {
+    border: 1px solid #777777;
+}
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #4da6ff;
+}
+
+QRadioButton {
+    spacing: 5px;
+}
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+/* ==========================
+   Pulsanti
+   ========================== */
+QPushButton {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton#avvia {
+    background-color: #4CAF50;
+    color: white;
+}
+QPushButton#avvia:hover {
+    background-color: #5cb85c;
+}
+QPushButton#stop {
+    background-color: #d9534f;
+    color: white;
+}
+QPushButton#stop:hover {
+    background-color: #c9302c;
+}
+QPushButton#config {
+    background-color: #337ab7;
+    color: white;
+}
+QPushButton#config:hover {
+    background-color: #286090;
+}
+QPushButton#info {
+    background-color: #f0ad4e;
+    color: black;
+}
+QPushButton#info:hover {
+    background-color: #ec971f;
+}
+QPushButton#resetButton {
+    background-color: #6c757d; /* Grigio bootstrap "secondary" */
+    color: white;
+    font-weight: normal;
+    font-size: 9pt;
+    padding: 4px 8px;
+    margin-top: 5px;
+}
+QPushButton#resetButton:hover {
+    background-color: #5a6268;
+}
+
+/* ==========================
+   Dialog e Log
+   ========================== */
+QDialog {
+    background-color: #1e1e1e;
+}
+QDialog QTextEdit {
+    background-color: #121212;
+    font-family: "Courier New", monospace;
+}
+QTextEdit#log_area {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Consolas", "Courier New", monospace;
+}
+QInputDialog {
+    background-color: #222222;
+}
+
+QLabel#metricValue {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50; /* Verde */
+}
